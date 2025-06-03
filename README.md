@@ -23,7 +23,7 @@ Sitio web desarrollado para una protectora de animales. Permite mostrar mascotas
 
 - HTML, CSS y JavaScript
 - Firebase Authentication
-- Firebase Hosting (opcional)
+- Firebase Hosting 
 - Vercel (Deploy automático)
 - Git y GitHub
 
