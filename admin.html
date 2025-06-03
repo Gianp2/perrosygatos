@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin - Perros y Gatos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Administración de Animales</h1>
+    <button id="logoutBtn">Cerrar sesión</button>
+  </header>
+
+  <main>
+    <section id="formSection">
+      <h2 id="formTitle">Agregar Animal</h2>
+      <form id="animalForm">
+        <input type="hidden" id="animalId" />
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input type="text" id="descripcion" placeholder="Descripción" required />
+        <input type="url" id="foto" placeholder="URL de la foto" required />
+        <button type="submit">Guardar</button>
+        <button type="button" id="cancelEdit" style="display:none;">Cancelar Edición</button>
+      </form>
+    </section>
+
+    <section id="animalesSection">
+      <h2>Animales Registrados</h2>
+      <div id="animalesList" class="contenedor"></div>
+    </section>
+  </main>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>

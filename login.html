@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Como Perros y Gatos</title>
+  <link rel="stylesheet" href="stylelogin.css" />
+  <style>
+    /* Estilo para el ícono de seguridad */
+    .security-icon {
+      display: block;
+      margin: 0 auto 1rem; /* Centrado con margen inferior */
+      width: 48px; /* Tamaño fijo para consistencia */
+      height: 48px;
+      object-fit: contain; /* Mantiene proporciones */
+    }
+
+    @media (max-width: 480px) {
+      .security-icon {
+        width: 40px; /* Tamaño más pequeño en móviles */
+        height: 40px;
+      }
+    }
+
+    #loginSection {
+      max-width: 400px;
+      margin: 5rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    #loginSection h2 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    #loginForm input {
+      width: 100%;
+      padding: 10px;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    #loginForm button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #loginForm button:hover {
+      background-color: #0056b3;
+    }
+    #loginStatus {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: red;
+      min-height: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <section id="loginSection">
+    <img src="img/seguridad.png" alt="Ícono de seguridad" class="security-icon" />
+    <h2>Iniciar Sesión</h2>
+    <form id="loginForm">
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <input type="password" name="password" placeholder="Contraseña" required />
+      <button type="submit">Login</button>
+    </form>
+    <div id="loginStatus"></div>
+  </section>
+
+  <script type="module" src="login.js"></script>
+</body>
+</html>
