@@ -4,9 +4,8 @@ Sitio web desarrollado para una protectora de animales. Permite mostrar mascotas
 
 ## 🔗 Sitio en línea
 
-👉 [Ver sitio desplegado en Vercel](https://TU-SUBDOMINIO.vercel.app)
+👉 [Ver sitio desplegado en Vercel](perrosygatos-cinco.vercel.app)
 
-> Reemplazá el enlace por el real si ya está activo (ej: `https://perrosygatos.vercel.app`)
 
 ---
 
